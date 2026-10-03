@@ -1,0 +1,21 @@
+{
+  "name": "apex-smm-panel",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "sh -c 'service mariadb start && php -S 0.0.0.0:3000 router.php' --",
+    "build": "vite build",
+    "lint": "find app config public views -name '*.php' -exec php -l {} \\; 2>/dev/null || true"
+  },
+  "dependencies": {
+    "alpinejs": "^3.14.9",
+    "apexcharts": "^5.4.0",
+    "gsap": "^3.14.2"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "tailwindcss": "^4.3.3",
+    "vite": "^8.3.0"
+  }
+}
